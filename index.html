@@ -12,17 +12,7 @@
   <!-- Scroll Reveal for animations -->
   <script src="https://unpkg.com/scrollreveal"></script>
   
-  <style>
-    body { scroll-behavior: smooth; }
-    header { background: #343a40; color: white; padding: 80px 0; text-align: center; }
-    section { padding: 60px 0; }
-    .section-title { margin-bottom: 40px; text-align: center; }
-    .experience-item, .project-item, .education-item, .skill-item, .activity-item { margin-bottom: 20px; }
-    .navbar-brand { font-weight: bold; }
-    footer { background: #f8f9fa; padding: 20px 0; text-align: center; }
-    .progress { height: 10px; }
-    .back-to-top { position: fixed; bottom: 20px; right: 20px; display: none; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -30,9 +20,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Gotibeh Alhady</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -47,10 +36,10 @@
   </nav>
 
   <!-- Header / Hero Section -->
-  <header id="home">
+  <header id="home" class="text-center text-white bg-dark py-5">
     <div class="container">
       <h1 class="display-4">Gotibeh Alhady</h1>
-      <p class="lead">Mechanical Engineering Student | Tech Intern at Tesla | Experienced in Mechanical Systems &amp; Design</p>
+      <p class="lead">Mechanical Engineering Student | Tech Intern at Tesla | Experienced in Mechanical Systems & Design</p>
       <div>
         <a href="mailto:alhadygotibeh@gmail.com" class="btn btn-primary btn-lg me-2">
           <i class="fas fa-envelope"></i> Email Me
@@ -65,10 +54,10 @@
     </div>
   </header>
 
-  <!-- Skills Section with Progress Bars -->
-  <section id="skills" class="bg-light">
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title text-center">Skills</h2>
       <div class="row">
         <div class="col-md-6">
           <h5>Software Tools</h5>
@@ -92,11 +81,8 @@
     </div>
   </section>
 
-  <!-- Back to Top Button -->
-  <button class="btn btn-primary back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
-
   <!-- Footer -->
-  <footer>
+  <footer class="text-center py-3 bg-dark text-white">
     <div class="container">
       <p>&copy; 2025 Gotibeh Alhady. All rights reserved.</p>
     </div>
@@ -110,22 +96,6 @@
     ScrollReveal().reveal('.section-title', { delay: 200, origin: 'top', distance: '30px', duration: 1000 });
     ScrollReveal().reveal('.experience-item, .project-item, .education-item, .skill-item', { delay: 300, origin: 'bottom', distance: '30px', duration: 1000 });
   </script>
-  
-  <!-- Back to Top Script -->
-  <script>
-    let backToTop = document.getElementById("backToTop");
-    window.onscroll = function () {
-      if (document.documentElement.scrollTop > 300) {
-        backToTop.style.display = "block";
-      } else {
-        backToTop.style.display = "none";
-      }
-    };
-    backToTop.onclick = function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-  </script>
 
 </body>
 </html>
-
