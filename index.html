@@ -1,18 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gotibeh Alhady - Resume</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #343a40;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .section-title {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .experience-item,
+    .project-item,
+    .education-item,
+    .skill-item,
+    .activity-item {
+      margin-bottom: 20px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    footer {
+      background: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p><strong>Email:</strong> your.email@example.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/alhady101" target="_blank">GitHub Profile</a></p>
-    <h2>Experience</h2>
-    <p>Your work experience details...</p>
-    <h2>Education</h2>
-    <p>Your education details...</p>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gotibeh Alhady</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header / Hero Section -->
+  <header id="home">
+    <div class="container">
+      <h1 class="display-4">Gotibeh Alhady</h1>
+      <p class="lead">Mechanical Engineering Student | Tech Intern at Tesla | Experienced in Mechanical Systems &amp; Design</p>
+      <div>
+        <a href="mailto:alhadygotibeh@gmail.com" class="btn btn-primary btn-lg me-2">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="btn btn-secondary btn-lg">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h4>Wayne State University, Detroit, MI</h4>
+        <p>
+          <strong>Bachelor of Science in Mechanical Engineering</strong> <br />
+          <em>Aug 2020 - 2026</em>
+        </p>
+        <p>
+          Relevant Coursework: Thermodynamics, Design in Engineering, Materials Science Laboratory for Engineering, Programming and Computation for Engineers, Materials Science for Engineering Apps, Probability and Statistics in Engineering, Differential Equations, Physics II, General Chemistry, Numerical Methods, Mechanics
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Software Tools</h5>
+          <ul>
+            <li>MATLAB</li>
+            <li>Python</li>
+            <li>NX 12</li>
+            <li>SolidWorks</li>
+            <li>MS Office Suite</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Technical Expertise</h5>
+          <ul>
+            <li>Reading and interpreting technical drawings</li>
+            <li>Mechanical system design</li>
+            <li>Diagnostics</li>
+            <li>Electrical circuits and wiring</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h5>Soft Skills</h5>
+          <ul>
+            <li>Problem-solving</li>
+            <li>Critical thinking</li>
+            <li>Team collaboration</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Languages</h5>
+          <ul>
+            <li>English (Fluent)</li>
+            <li>Arabic (Fluent)</li>
+            <li>Urdu (Beginner)</li>
+            <li>Bengali (Beginner)</li>
+            <li>Russian (Beginner)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      
+      <!-- Tesla Experience -->
+      <div class="experience-item">
+        <h4>Tesla, Ann Arbor, MI</h4>
+        <p>
+          <strong>Tech Intern</strong> <em>(October 2023 – January 2024)</em>
+        </p>
+        <ul>
+          <li>Active troubleshooting and problem-solving activities, contributing innovative solutions to engineering challenges (96% success rate).</li>
+          <li>Supported engineering teams in troubleshooting and resolving complex mechanical design issues.</li>
+          <li>Collaborated with cross-functional teams to ensure project goals were met on time.</li>
+          <li>Maintained detailed documentation for design changes and test results to track progress and identify defects.</li>
+          <li>Assisted in the fabrication and testing of mechanical components, ensuring quality and precision.</li>
+        </ul>
+      </div>
+
+      <!-- Jim's Auto Repair Experience -->
+      <div class="experience-item">
+        <h4>Jim’s Auto Repair, Dearborn, MI</h4>
+        <p>
+          <strong>Technical Mechanic</strong> <em>(February 2020 – January 2023)</em>
+        </p>
+        <ul>
+          <li>Diagnosed mechanical malfunctions in vehicles and proposed effective solutions.</li>
+          <li>Selected and utilized the appropriate tools and equipment for vehicle maintenance and repair.</li>
+          <li>Ensured durable, high-quality service to improve vehicle performance and safety.</li>
+        </ul>
+      </div>
+
+      <!-- Homes Remodeling, Construction, & Destruction Experience -->
+      <div class="experience-item">
+        <h4>Homes Remodeling, Construction, &amp; Destruction, Detroit, MI</h4>
+        <p>
+          <strong>Private Contractor/Company Apprentice</strong> <em>(2017 - 2020, 2023 – Current)</em>
+        </p>
+        <ul>
+          <li>Directed demolition operations with precision, implementing structural analysis techniques to ensure efficient deconstruction.</li>
+          <li>Collaborated on high stake remodeling projects, integrating design principles with structural engineering concepts to optimize both aesthetics and functionality.</li>
+          <li>Conducted structural inspections to proactively identify and mitigate potential failure points, ensuring compliance with regulatory building codes and enhancing site safety.</li>
+          <li>Engineered creative structural solutions for home renovation projects, integrating load-bearing assessments and material selection processes to exceed client expectations with a 98% satisfaction rate.</li>
+        </ul>
+      </div>
+
+      <!-- Lincoln Manor Experience -->
+      <div class="experience-item">
+        <h4>Lincoln Manor, Lincoln Park, MI</h4>
+        <p>
+          <strong>Banquet Manager</strong> <em>(February 2021 – September 2023)</em>
+        </p>
+        <ul>
+          <li>Designed and organized venues to exceed customer expectations, showcasing project management skills.</li>
+          <li>Coordinated team operations to ensure timely completion of tasks and high-quality service delivery.</li>
+          <li>Conducted detailed inspections to ensure proper operational functionality for events.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-item">
+        <h4>FRC Robotics Competition</h4>
+        <p>Led the design of a robotics system capable of executing precision tasks within tight deadlines.</p>
+      </div>
+      <div class="project-item">
+        <h4>Vehicle Overhaul</h4>
+        <p>Conducted a comprehensive electrical overhaul for a Mercedes E55, ensuring the circuit system met performance standards.</p>
+      </div>
+      <div class="project-item">
+        <h4>Engine Swapped Lexas x Supra</h4>
+        <p>Tuned and modified vehicle components (suspensions, drivetrain, transmission, engine components including electrical, fuel/air, cooling, and internals) to withstand higher performance and abuse.</p>
+      </div>
+      <div class="project-item">
+        <h4>Scissor Jack Design</h4>
+        <p>Modeled and optimized a scissor jack in NX 12, prioritizing material efficiency and structural stability under tension.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities">
+    <div class="container">
+      <h2 class="section-title">Activities</h2>
+      <ul>
+        <li>Formula Team/SAE - Society of Automotive Engineers</li>
+        <li>FRC - First Robotics Competition (Past)</li>
+        <li>SEF – Cobo Hall Science and Engineering Fair (Past)</li>
+        <li>Wayne State Grappling</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>If you'd like to get in touch, feel free to send me an email or connect on LinkedIn.</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:alhadygotibeh@gmail.com">alhadygotibeh@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/" target="_blank">My LinkedIn</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gotibeh Alhady. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
