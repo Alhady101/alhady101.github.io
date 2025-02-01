@@ -15,7 +15,19 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <style>
+  /* Parallax Effect */
+.parallax {
+  position: relative;
+  background: url('https://wallpapers.com/images/hd/mechanical-engineering-5pdwsbs0k6d06eqk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
     /* Smooth scrolling */
     html {
       scroll-behavior: smooth;
@@ -119,7 +131,7 @@
   </nav>
 
   <!-- Header / Hero Section -->
-  <header id="home">
+<header id="home" class="parallax">
     <div class="container" data-aos="fade-up">
       <h1 class="display-4">Gotibeh Alhady</h1>
       <p class="lead">Mechanical Engineering Student | Tech Intern at Tesla | Expert in Mechanical Systems &amp; Design</p>
